@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+<?php
+
+    include('php/connect.php');
+    include('php/function.php');
+
+    $ref = $_GET['']; //получение ссылки
+    $ref_r = explode("/", $ref); //Разделение ссылки
+    $type = $_SERVER['REQUEST_METHOD']; //Метод
+    $res = [];
+
+    if($type == 'GET'){
+        if($ref[0] == ''){
+            echo('aa');
+        };
+    };
+
+?>
+
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -14,4 +33,4 @@
     
     <script src="js/main.js"></script>
 </body>
-</html>
+</html> -->
